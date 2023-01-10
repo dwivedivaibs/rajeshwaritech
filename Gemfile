@@ -82,3 +82,12 @@ gem 'friendly_id', '~> 5.4.0'
 
 gem 'acts-as-taggable-on', '~> 6.0'
 
+
+group :development do
+  gem 'capistrano', '~> 3.11.0',        require: false
+  gem 'capistrano-rvm', '~> 0.1.2',     require: false
+  gem 'capistrano-rails', '~> 1.4.0',   require: false
+  gem 'capistrano-bundler', '~> 1.3.0', require: false
+  gem 'capistrano3-puma', '~> 3.1.1',   require: false
+end
+
