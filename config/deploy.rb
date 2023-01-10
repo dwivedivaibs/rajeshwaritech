@@ -1,5 +1,5 @@
 # Change these
-server '13.127.65.135', port: 22, roles: [:web, :app, :db], primary: true
+server '13.235.94.96', port: 22, roles: [:web, :app, :db], primary: true
 
 set :repo_url,'git@github.com:dwivedivaibs/rajeshwaritech.git'
 set :application,     'rajeshwaritech'
