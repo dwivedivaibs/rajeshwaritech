@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   # get 'blogs', to: "home#blogs"
   get 'contact-us', to: "home#contact_us"
+  get 'freelance', to: "home#freelance"
   get 'about-us', to: "home#about_us"
   get 'consulting-services', to: "home#consulting_services"
 

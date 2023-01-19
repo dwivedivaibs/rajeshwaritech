@@ -4,12 +4,11 @@
       <div class="nv-single-page-wrap col">
         <div class="nv-content-wrap entry-content">
           <div class="wp-block-cover alignfull is-light" style="min-height:700px">
-              <span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img decoding="async" width="1366" height="768" class="wp-block-cover__image-background wp-image-3420" alt="" src="<%= asset_path('main.png')%>" style="object-position:57% 54%" data-object-fit="cover" data-object-position="57% 54%" />
-              <div class="wp-block-cover__inner-container">
-                  <div style="height:80px" aria-hidden="true" class="wp-block-spacer"></div>
-                  <h1 class="has-text-align-center has-text-color" id="1-learn-lead-amp-succeed" style="color:#121212">Learn > Upgrade > Successed</h1>
-                  <p class="has-text-align-center has-text-color" style="color:#121212;font-size:17px">Learn new skills, upgrade yourself and land your dream job with Rajeshwari Tech courses.</p>
-                  <div class="is-horizontal is-content-justification-center is-layout-flex wp-container-1 wp-block-buttons">
+              <span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img decoding="async" width="1366" height="768" class="wp-block-cover__image-background wp-image-3420" alt="" src="<%= asset_path('main.jpg')%>" style="object-position:57% 54%" data-object-fit="cover" data-object-position="57% 54%" />
+              <div class="wp-block-cover__inner-container" style="max-width: 90%;">
+                  <h1 class="has-text-color" id="1-learn-lead-amp-succeed" style="color:#ffffff">Learn > Upgrade > Successed</h1>
+                  <p class="has-text-color" style="color:#ffffff;font-size:17px">Learn new skills, upgrade yourself and land your dream job with Rajeshwari Tech courses.</p>
+                  <div class="is-horizontal is-content-justification-center is-layout-flex wp-container-1 wp-block-buttons" style="justify-content: left;">
                       <div class="wp-block-button is-style-primary"><a class="wp-block-button__link wp-element-button" href="<%= courses_path%>">Training</a></div>
                       <div class="wp-block-button is-style-secondary"><a class="wp-block-button__link wp-element-button" href="<%= consulting_services_path %>">Consulting</a></div>
                   </div>
@@ -62,7 +61,7 @@
                       <h2 class="has-text-align-left has-neve-text-color-color has-text-color" id="5-training-services">Training Services</h2>
                       <p class="has-text-align-left has-neve-text-color-color has-text-color" style="font-size:17px">Classroom &amp; live Instructor-led training programs across wide variety of cutting edge technologies tailored for organizations as well as individual technology professionals</p>
                       <div class="is-horizontal is-content-justification-left is-layout-flex wp-container-7 wp-block-buttons">
-                        <div class="wp-block-button is-style-primary"><a class="wp-block-button__link wp-element-button" href="courses/index.html">LEARN MORE</a></div>
+                        <div class="wp-block-button is-style-primary"><a class="wp-block-button__link wp-element-button" href="<%= courses_path %>">LEARN MORE</a></div>
                       </div>
                     </div>
                   </div>
@@ -82,7 +81,7 @@
                       <h2 class="has-text-align-left has-neve-text-color-color has-text-color" id="6-consulting-services">Consulting Services</h2>
                       <p class="has-text-align-left has-neve-text-color-color has-text-color" style="font-size:17px">Guide/Handhold customers for better managing their IT landscape/Technologies to support business goals and objectives, achieve efficiencies and quality output and reduce costs in the longer run.</p>
                       <div class="is-horizontal is-content-justification-left is-layout-flex wp-container-11 wp-block-buttons">
-                        <div class="wp-block-button is-style-primary"><a class="wp-block-button__link wp-element-button" href="consulting-services/index.html">LEARN MORE</a></div>
+                        <div class="wp-block-button is-style-primary"><a class="wp-block-button__link wp-element-button" href="<%= consulting_services_path %>">LEARN MORE</a></div>
                       </div>
                       <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
                     </div>
@@ -111,7 +110,7 @@
             <div class="is-layout-flex wp-container-7 wp-block-columns">
               <div class="is-layout-flow wp-block-column">
                 <div class="wp-block-qubely-infobox qubely-block-3ec533">
-                  <div class="qubely-block-info-box  qubely-info-box-layout-1"><div class="qubely-info-box-media qubely-media-has-bg"><img decoding="async" class="qubely-info-box-image" src="<%= asset_path('certified-sdet-professional.jpg')%>" srcset="" alt=""></div><div class="qubely-info-box-body"><div class="qubely-info-box-title-container  qubely-separator-position-top"><div class="qubely-info-box-title-inner"><h2 class="qubely-info-box-title"><a href="<%= blogs_path %>">Training<br><br></a></h2></div></div><div class="qubely-info-box-content"><div class="qubely-info-box-text"></div></div></div></div>
+                  <div class="qubely-block-info-box  qubely-info-box-layout-1"><div class="qubely-info-box-media qubely-media-has-bg"><img decoding="async" class="qubely-info-box-image" src="<%= asset_path('certified-sdet-professional.jpg')%>" srcset="" alt=""></div><div class="qubely-info-box-body"><div class="qubely-info-box-title-container  qubely-separator-position-top"><div class="qubely-info-box-title-inner"><h2 class="qubely-info-box-title"><a href="<%= courses_path %>">Training<br><br></a></h2></div></div><div class="qubely-info-box-content"><div class="qubely-info-box-text"></div></div></div></div>
                 </div>
               </div>
               <div class="is-layout-flow wp-block-column">
@@ -121,12 +120,12 @@
               </div>
               <div class="is-layout-flow wp-block-column">
                 <div class="wp-block-qubely-infobox qubely-block-3ec533">
-                  <div class="qubely-block-info-box  qubely-info-box-layout-1"><div class="qubely-info-box-media qubely-media-has-bg"><img decoding="async" class="qubely-info-box-image" src="<%= asset_path('certified-sdet-professional.jpg')%>" srcset="" alt=""></div><div class="qubely-info-box-body"><div class="qubely-info-box-title-container  qubely-separator-position-top"><div class="qubely-info-box-title-inner"><h2 class="qubely-info-box-title"><a href="<%= blogs_path %>">Consulting Services<br><br></a></h2></div></div><div class="qubely-info-box-content"><div class="qubely-info-box-text"></div></div></div></div>
+                  <div class="qubely-block-info-box  qubely-info-box-layout-1"><div class="qubely-info-box-media qubely-media-has-bg"><img decoding="async" class="qubely-info-box-image" src="<%= asset_path('certified-sdet-professional.jpg')%>" srcset="" alt=""></div><div class="qubely-info-box-body"><div class="qubely-info-box-title-container  qubely-separator-position-top"><div class="qubely-info-box-title-inner"><h2 class="qubely-info-box-title"><a href="<%= consulting_services_path %>">Consulting Services<br><br></a></h2></div></div><div class="qubely-info-box-content"><div class="qubely-info-box-text"></div></div></div></div>
                 </div>
               </div>
               <div class="is-layout-flow wp-block-column">
                 <div class="wp-block-qubely-infobox qubely-block-212ff8">
-                  <div class="qubely-block-info-box  qubely-info-box-layout-1"><div class="qubely-info-box-media qubely-media-has-bg"><img decoding="async" class="qubely-info-box-image" src="<%= asset_path('certified-sdet-professional.jpg')%>" srcset="" alt=""></div><div class="qubely-info-box-body"><div class="qubely-info-box-title-container  qubely-separator-position-top"><div class="qubely-info-box-title-inner"><h2 class="qubely-info-box-title"><a href="<%= blogs_path %>">Freelance<br><br></a></h2></div></div><div class="qubely-info-box-content"><div class="qubely-info-box-text"> </div></div></div></div>
+                  <div class="qubely-block-info-box  qubely-info-box-layout-1"><div class="qubely-info-box-media qubely-media-has-bg"><img decoding="async" class="qubely-info-box-image" src="<%= asset_path('certified-sdet-professional.jpg')%>" srcset="" alt=""></div><div class="qubely-info-box-body"><div class="qubely-info-box-title-container  qubely-separator-position-top"><div class="qubely-info-box-title-inner"><h2 class="qubely-info-box-title"><a href="<%= freelance_path %>">Freelance<br><br></a></h2></div></div><div class="qubely-info-box-content"><div class="qubely-info-box-text"> </div></div></div></div>
                 </div>
               </div>
               <div class="is-layout-flow wp-block-column">
@@ -208,9 +207,7 @@
               <p class="has-text-align-center has-large-font-size">India’s most preferred workshop oriented courses</p>
               <p class="has-text-align-center">DevLabs Alliance offers career transformational courses that not only help in clearing the concepts and terminologies but also provide extensive hands-on experience through assignments, real case studies and live projects.</p>
               <div class="is-layout-flex wp-container-37 wp-block-columns">
-                <div class="is-layout-flow wp-block-column">
-                  <p class="has-text-align-center has-nv-text-dark-bg-color has-text-color" style="font-size:11px"><img decoding="async" style="width: 30px;" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' aria-hidden='true' focusable='false' width='0.88em' height='1em' style='-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);' preserveAspectRatio='xMidYMid meet' viewBox='0 0 448 512'%3E%3Cpath d='M313.6 304c-28.7 0-42.5 16-89.6 16c-47.1 0-60.8-16-89.6-16C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM400 464H48v-25.6c0-47.6 38.8-86.4 86.4-86.4c14.6 0 38.3 16 89.6 16c51.7 0 74.9-16 89.6-16c47.6 0 86.4 38.8 86.4 86.4V464zM224 288c79.5 0 144-64.5 144-144S303.5 0 224 0S80 64.5 80 144s64.5 144 144 144zm0-240c52.9 0 96 43.1 96 96s-43.1 96-96 96s-96-43.1-96-96s43.1-96 96-96z' fill='%23ffffff'/%3E%3C/svg%3E" alt=""><span style="font-size:40px; margin-top:-20px;"> | 50+</span><br><span style="font-size:20px; margin-top:-20px;">CORPORATE CLIENTS</span></p>
-                </div>
+                
                 <div class="is-layout-flow wp-block-column">
                   <p class="has-text-align-center has-nv-text-dark-bg-color has-text-color" style="font-size:11px"><img decoding="async" style="width: 30px;" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' aria-hidden='true' focusable='false' width='0.88em' height='1em' style='-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);' preserveAspectRatio='xMidYMid meet' viewBox='0 0 448 512'%3E%3Cpath d='M313.6 304c-28.7 0-42.5 16-89.6 16c-47.1 0-60.8-16-89.6-16C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM400 464H48v-25.6c0-47.6 38.8-86.4 86.4-86.4c14.6 0 38.3 16 89.6 16c51.7 0 74.9-16 89.6-16c47.6 0 86.4 38.8 86.4 86.4V464zM224 288c79.5 0 144-64.5 144-144S303.5 0 224 0S80 64.5 80 144s64.5 144 144 144zm0-240c52.9 0 96 43.1 96 96s-43.1 96-96 96s-96-43.1-96-96s43.1-96 96-96z' fill='%23ffffff'/%3E%3C/svg%3E" alt=""><span style="font-size:40px; margin-top:-20px;"> | 100K+</span><br><span style="font-size:20px; margin-top:-20px;">HAPPY STUDENTS</span></p>
                 </div>
@@ -235,50 +232,19 @@
           </div>
           <div class="wp-block-qubely-postgrid qubely-block-8c3375">
             <div class="qubely-postgrid-wrapper  qubely-postgrid-layout-2 qubely-postgrid-column qubely-postgrid-column-md4 qubely-postgrid-column-sm2 qubely-postgrid-column-xs1" >
-              <div class="qubely-postgrid qubely-post-grid-view qubely-postgrid-style-2">
-                <div class="qubely-post-grid-wrapper qubely-post-grid-center">
-                  <div class="qubely-post-grid-img qubely-post-img qubely-post-img-zoom-out"><a href="what-is-test-automation-framework/index.html"><img decoding="async" class="qubely-post-image" src="<%= asset_path('what-is-test-automation-framework.jpg')%>" alt="What Is Test Automation Framework?"/></a></div>
-                  <div class="qubely-post-grid-content">
-                    <span class="qubely-postgrid-category"><a href="category/selenium/index.html" rel="category tag">Selenium</a></span>
-                    <h2 class="qubely-postgrid-title"><a href="what-is-test-automation-framework/index.html">What Is Test Automation Framework?</a></h2>
-                    <div class="qubely-postgrid-meta"><span><i class="fa fa-calendar-alt"></i> August 13, 2022</span></div>
-                    <div class="qubely-postgrid-intro">A test automation framework is a cluster of guidelines for developing and designing test cases. It is a conceptual aspect </div>
+              <% @blogs.each do |blog| %>
+                <div class="qubely-postgrid qubely-post-grid-view qubely-postgrid-style-2">
+                  <div class="qubely-post-grid-wrapper qubely-post-grid-center">
+                    <div class="qubely-post-grid-img qubely-post-img qubely-post-img-zoom-out"><a href="<%= blog_path(blog)%>"><img decoding="async" class="qubely-post-image" src="<%= asset_path(blog.blog_image.url)%>" alt="What Is Test Automation Framework?"/></a></div>
+                    <div class="qubely-post-grid-content">
+                      <span class="qubely-postgrid-category"><a href="category/selenium/index.html" rel="category tag"><%= blog.tags.collect(&:name).first%></a></span>
+                      <h2 class="qubely-postgrid-title"><a href="what-is-test-automation-framework/index.html"><%= blog.title %></a></h2>
+                      <div class="qubely-postgrid-meta"><span><i class="fa fa-calendar-alt"></i><%= blog.created_at %></span></div>
+                      <div class="qubely-postgrid-intro"><%= blog.heading %></div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="qubely-postgrid qubely-post-grid-view qubely-postgrid-style-2">
-                <div class="qubely-post-grid-wrapper qubely-post-grid-center">
-                  <div class="qubely-post-grid-img qubely-post-img qubely-post-img-zoom-out"><a href="what-is-unittest-in-python/index.html"><img decoding="async" class="qubely-post-image" src="<%= asset_path('what-is-unittest-in-python.jpg')%>" alt="What Is Unittest In Python?"/></a></div>
-                  <div class="qubely-post-grid-content">
-                    <span class="qubely-postgrid-category"><a href="category/python/index.html" rel="category tag">Python</a></span>
-                    <h2 class="qubely-postgrid-title"><a href="what-is-unittest-in-python/index.html">What Is Unittest In Python?</a></h2>
-                    <div class="qubely-postgrid-meta"><span><i class="fa fa-calendar-alt"></i> August 4, 2022</span></div>
-                    <div class="qubely-postgrid-intro">The idea of Unittest in Python is that we check each small piece of our program independently to ensure that </div>
-                  </div>
-                </div>
-              </div>
-              <div class="qubely-postgrid qubely-post-grid-view qubely-postgrid-style-2">
-                <div class="qubely-post-grid-wrapper qubely-post-grid-center">
-                  <div class="qubely-post-grid-img qubely-post-img qubely-post-img-zoom-out"><a href="cicd-and-its-best-practices/index.html"><img decoding="async" class="qubely-post-image" src="<%= asset_path('CICD-and-its-best-practices.jpg')%>" alt="CICD And Its Best Practices"/></a></div>
-                  <div class="qubely-post-grid-content">
-                    <span class="qubely-postgrid-category"><a href="category/devops/index.html" rel="category tag">DevOps</a></span>
-                    <h2 class="qubely-postgrid-title"><a href="cicd-and-its-best-practices/index.html">CICD And Its Best Practices</a></h2>
-                    <div class="qubely-postgrid-meta"><span><i class="fa fa-calendar-alt"></i> July 26, 2022</span></div>
-                    <div class="qubely-postgrid-intro">Any successful DevOps methodology relies on continuous integration and delivery CICD best practices that must be followed by teams who </div>
-                  </div>
-                </div>
-              </div>
-              <div class="qubely-postgrid qubely-post-grid-view qubely-postgrid-style-2">
-                <div class="qubely-post-grid-wrapper qubely-post-grid-center">
-                  <div class="qubely-post-grid-img qubely-post-img qubely-post-img-zoom-out"><a href="how-to-do-headless-browser-testing-in-selenium/index.html"><img decoding="async" class="qubely-post-image" src="<%= asset_path('headless-browser-testing-in-selenium.jpg')%>" alt="How to do Headless Browser Testing in Selenium?"/></a></div>
-                  <div class="qubely-post-grid-content">
-                    <span class="qubely-postgrid-category"><a href="category/selenium/index.html" rel="category tag">Selenium</a></span>
-                    <h2 class="qubely-postgrid-title"><a href="how-to-do-headless-browser-testing-in-selenium/index.html">How to do Headless Browser Testing in Selenium?</a></h2>
-                    <div class="qubely-postgrid-meta"><span><i class="fa fa-calendar-alt"></i> July 8, 2022</span></div>
-                    <div class="qubely-postgrid-intro">Selenium is a set of tools that lets you write automated tests for web applications in various programing languages</div>
-                  </div>
-                </div>
-              </div>
+                <% end %>
             </div>
           </div>
           <p></p>
@@ -290,12 +256,12 @@
                   <div style="height:80px" aria-hidden="true" class="wp-block-spacer"></div>
                   <div class="is-layout-flex wp-container-42 wp-block-columns are-vertically-aligned-center">
                     <div class="is-layout-flow wp-block-column is-vertically-aligned-center" style="flex-basis:50%">
-                      <figure class="wp-block-image size-large"><img decoding="async" loading="lazy" width="600" height="600" src="<%= asset_path('neve-web-design-bg-08.jpg')%>" alt="" class="wp-image-35"/></figure>
+                      <figure class="wp-block-image size-large"><img decoding="async" loading="lazy" width="600" height="600" src="<%= asset_path('training.jpg')%>" alt="" class="wp-image-35"/></figure>
                     </div>
                     <div class="is-layout-flow wp-block-column is-vertically-aligned-center" style="flex-basis:50%">
                       <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
                       <h2 class="has-text-align-left has-nv-text-dark-bg-color has-text-color" id="13-we-are-driven-by-values">We are driven by values</h2>
-                      <p class="has-text-align-left has-nv-text-dark-bg-color has-text-color" style="font-size:17px">Diversity, Integrity, Compassion, and Excellence (DICE) are core values of Devlabs Alliance. These are part of our culture and they are always reflected in our planning and execution.</p>
+                      <p class="has-text-align-left has-nv-text-dark-bg-color has-text-color" style="font-size:17px">Diversity, Integrity, Compassion, and Excellence (DICE) are core values of Rajeshwari Tech. These are part of our culture and they are always reflected in our planning and execution.</p>
                       <div class="is-horizontal is-content-justification-left is-layout-flex wp-container-40 wp-block-buttons">
                         <div class="wp-block-button is-style-primary"><a class="wp-block-button__link wp-element-button" href="#">LEARN MORE</a></div>
                       </div>
