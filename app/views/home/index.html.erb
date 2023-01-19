@@ -1,3 +1,6 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <main id="content" class="neve-main" role="main">
   <div class="container single-page-container">
     <div class="row">
@@ -53,7 +56,7 @@
                   <div class="is-layout-flex wp-container-9 wp-block-columns are-vertically-aligned-center">
                     <div class="is-layout-flow wp-block-column is-vertically-aligned-center" style="flex-basis:50%">
                       <figure class="wp-block-image size-full">
-                        <img decoding="async" loading="lazy" width="600" height="411" src="<%= asset_path('corporate-trainings.png')%>" alt="" class="wp-image-2622" sizes="(max-width: 600px) 100vw, 600px" />
+                        <img decoding="async" loading="lazy" width="600" height="411" src="<%= asset_path('corporate-trainings.webp')%>" alt="" class="wp-image-2622" sizes="(max-width: 600px) 100vw, 600px" />
                       </figure>
                     </div>
                     <div class="is-layout-flow wp-block-column is-vertically-aligned-center" style="flex-basis:50%">
@@ -86,7 +89,7 @@
                       <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
                     </div>
                     <div class="is-layout-flow wp-block-column is-vertically-aligned-center" style="flex-basis:50%">
-                      <figure class="wp-block-image size-large"><img decoding="async" loading="lazy" width="602" height="411" src="<%= asset_path('consulting-services.jpg')%>"alt="" class="wp-image-347" sizes="(max-width: 602px) 100vw, 602px" /></figure>
+                      <figure class="wp-block-image size-large"><img decoding="async" loading="lazy" width="602" height="411" src="<%= asset_path('consulting-services.png')%>"alt="" class="wp-image-347" sizes="(max-width: 602px) 100vw, 602px" /></figure>
                     </div>
                   </div>
                 </div>
@@ -344,7 +347,62 @@
     </div>
   </div>
 </main>
+
+<div id="myModal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <center><h5 class="modal-title">Ask to Our Expert</h5></center>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <%= form_tag save_enquiry_path do %>
+        <div class="modal-body" style="background: #ccc;">
+          <center><h3 class="modal-title" style="padding: 10px 10px 20px 17px;font-weight: bold;">Ask to Our Expert</h3></center>
+          <div class="form-row">
+            <div class="col">
+              <%= text_field_tag :first_name, nil ,class: "form-control", placeholder: "First name" %>
+            </div>
+            <div class="col">
+              <%= text_field_tag :last_name, nil ,class: "form-control", placeholder: "Last name" %>
+            </div>
+          </div>
+          <br>
+          <div class="form-row">
+            <div class="col">
+              <%= email_field_tag :email, nil ,class: "form-control", placeholder: "Email Address" %>
+            </div>
+            <div class="col">
+              <%= text_field_tag :phone, nil ,class: "form-control", placeholder: "Phone" %>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="form-row">
+            <div class="col" style="text-align: center;">
+              <%= submit_tag "Submit",class: "btn btn-success", style: "color: #fff;border-radius: 10px;" %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#myModal").modal('show');
+  });
+</script>
 <style type="text/css">
+  .form-row input{
+    height: 50px;
+  }
+  .modal-dialog {
+    max-width: 800px;
+  }
+  .modal-open .modal {
+    top: 30%;
+  }
   .fa-font{
     font-size: 72px;
   }
