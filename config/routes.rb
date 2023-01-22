@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get 'freelance', to: "home#freelance"
   get 'about-us', to: "home#about_us"
   get 'consulting-services', to: "home#consulting_services"
+  get 'corporate-training', to: "home#corporate_training"
   post 'save_enquiry', to: "home#save_enquiry"
 
   resources :courses do
