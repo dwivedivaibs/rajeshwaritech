@@ -7,5 +7,3 @@ class EnquiryMailer < ApplicationMailer
   end
 end
 
-	end
-end
