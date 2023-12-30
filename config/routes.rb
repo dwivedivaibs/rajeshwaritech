@@ -18,6 +18,7 @@ Rails.application.routes.draw do
     collection do
       get 'sdet-professional'
       get 'sdet-professional-python'
+      get 'sdet-professional-java'
     end
   end
 

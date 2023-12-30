@@ -55,77 +55,12 @@
           <div id="block-9" class="widget widget_block"><h3>Recent Posts</h3></div>
           <div id="block-7" class="widget widget_block widget_recent_entries">
             <ul class="wp-block-latest-posts__list x_border_r wp-block-latest-posts">
-              <li><a class="wp-block-latest-posts__post-title" href="../what-is-test-automation-framework/index.html">What Is Test Automation Framework?</a></li>
-              <li><a class="wp-block-latest-posts__post-title" href="../what-is-unittest-in-python/index.html">What Is Unittest In Python?</a></li>
-              <li><a class="wp-block-latest-posts__post-title" href="../cicd-and-its-best-practices/index.html">CICD And Its Best Practices</a></li>
-              <li><a class="wp-block-latest-posts__post-title" href="../how-to-do-headless-browser-testing-in-selenium/index.html">How to do Headless Browser Testing in Selenium?</a></li>
-              <li><a class="wp-block-latest-posts__post-title" href="../how-do-i-automate-in-selenium/index.html">How do I automate in Selenium?</a></li>
+              <% @blogs.last(5).each do |blog| %>
+                <li><a class="wp-block-latest-posts__post-title" href="<%= blog_path(blog) %>"><%= blog.title %></a></li>
+              <% end %>
             </ul>
           </div>
-          <div id="block-6" class="widget widget_block">
-            <h3>Drop us a Query</h3>
-            <div style="border: 1px solid #095b82; border-radius: 5px; padding: 7px; text-align: center;" id="mlink">
-              <div role="form" class="wpcf7" id="wpcf7-f5681-o7" lang="en-US" dir="ltr">
-                <div class="screen-reader-response">
-                  <p role="status" aria-live="polite" aria-atomic="true"></p>
-                  <ul></ul>
-                </div>
-                <form action="https://www.devlabsalliance.com/setup-selenium-with-c/#wpcf7-f5681-o7" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
-                  <div style="display: none;">
-                    <input type="hidden" name="_wpcf7" value="5681" />
-                    <input type="hidden" name="_wpcf7_version" value="5.6.4" />
-                    <input type="hidden" name="_wpcf7_locale" value="en_US" />
-                    <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f5681-o7" />
-                    <input type="hidden" name="_wpcf7_container_post" value="0" />
-                    <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
-                    <input type="hidden" name="_wpcf7_recaptcha_response" value="" />
-                  </div>
-
-                  <!-- CF7 Modules -->
-                  <div style="display: none;"><input type="hidden" name="leadsquared-mx_Form_Name" value="DLA - Blog Side Bar Form" class="wpcf7-form-control wpcf7-hidden" /></div>
-                  <!-- End CF7 Modules -->
-
-                  <div id="responsive-form" class="clearfix">
-                    <div class="form-row">
-                      <div class="column-full">
-                        <span class="wpcf7-form-control-wrap" data-name="leadsquared-FirstName">
-                          <input type="text" name="leadsquared-FirstName" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name*" />
-                        </span>
-                      </div>
-                    </div>
-                    <div class="form-row">
-                      <div class="column-full">
-                        <span class="wpcf7-form-control-wrap" data-name="leadsquared-Mobile">
-                          <input type="text" name="leadsquared-Mobile" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Phone*" />
-                        </span>
-                      </div>
-                    </div>
-                    <div class="form-row">
-                      <div class="column-full">
-                        <span class="wpcf7-form-control-wrap" data-name="leadsquared-EmailAddress">
-                          <input
-                            type="email"
-                            name="leadsquared-EmailAddress"
-                            value=""
-                            size="40"
-                            class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
-                            aria-required="true"
-                            aria-invalid="false"
-                            placeholder="Email*"
-                          />
-                        </span>
-                      </div>
-                    </div>
-                    <div class="form-row">
-                      <div class="column-full"><input type="submit" value="Submit" class="wpcf7-form-control has-spinner wpcf7-submit" /></div>
-                    </div>
-                  </div>
-                  <input type="hidden" class="wpcf7-pum" value='{"closepopup":false,"closedelay":0,"openpopup":false,"openpopup_id":0}' />
-                  <div class="wpcf7-response-output" aria-hidden="true"></div>
-                </form>
-              </div>
-            </div>
-          </div>
+          
         </aside>
       </div>
     </div>

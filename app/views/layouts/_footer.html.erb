@@ -15,26 +15,19 @@
                       <div class="is-layout-flow wp-block-column">
                         <h3 id="trending-courses">Trending Courses</h3>
                         <ul>
-                          <li><a href="courses/certified-sdet-professional/index.html">Certified SDET Professional</a></li>
-                          <li><a href="courses/sdet-advanced/index.html">Certified SDET Advanced</a></li>
-                          <li><a href="courses/certified-sdet-professional-in-python/index.html">Certified SDET Professional – Python</a></li>
-                          <li><a href="courses/certified-sdet-masters-in-python/index.html">Certified SDET Masters – Python</a></li>
-                          <li><a href="courses/devops-professional-certification-course/index.html">Certified DevOps Professional</a></li>
-                          <li><a href="courses/docker-with-kubernetes-certification-course/index.html">Docker with Kubernetes Certification Course</a></li>
-                          <li><a href="courses/certified-kubernetes-administrator/index.html">Certified Kubernetes Administrator (CKA)</a></li>
-                          <li><a href="courses/robotic-process-automation-with-cognitive-automation/index.html">Robotics Process Automation with Cognitive Automation</a></li>
-                          <li><a href="courses/az-400-azure-devops-solutions/index.html">AZ-400: Microsoft Azure DevOps Solutions</a></li>
-                          <li><a href="courses/big-data-hadoop-certification-course/index.html">Big Data Hadoop Certification Course</a></li>
+                          <li><a href="<%= sdet_professional_courses_path %>">Certified SDET Professional</a></li>
+                          <li><a href="<%= sdet_professional_python_courses_path %>">Certified SDET Professional – Python</a></li>
+                          
+                          <li><a href="<%= sdet_professional_java_courses_path%>">Certified SDET Professional – Core JAVA</a></li>
+                          
                         </ul>
                       </div>
                       <div class="is-layout-flow wp-block-column">
                         <h3 id="consultation">Consultation</h3>
                         <ul>
-                          <li><a href="salesforce/index.html">Salesforce</a></li>
-                          <li><a href="test-automation-continuous-delivery/index.html">Test Automation</a></li>
-                          <li><a href="devops-continuous-delivery/index.html">DevOps and CI/CD</a></li>
-                          <li><a href="software-development/index.html">Software Development</a></li>
-                          <li><a href="on-site-corporate-training/index.html">Corporate Training</a></li>
+                          <li><a href="<%= freelance_path%>">Freelance</a></li>
+                          <li><a href="<%= sdet_professional_courses_path %>">Software Development</a></li>
+                          <li><a href="<%= corporate_training_path %>">Corporate Training</a></li>
                         </ul>
                         <p></p>
                       </div>
@@ -42,22 +35,15 @@
                         <figure class="wp-block-image size-full"><img decoding="async" loading="lazy" width="257" height="47" src="<%= asset_path('logo.png')%>" alt="" class="wp-image-528"/></figure>
                         <ul>
                           <li><a href="<%= about_us_path %>#my-mission">Our Mission</a></li>
-                          <li><a href="about/index.html#alliance-partners">Our Alliance Partners</a></li>
-                          <li><a href="about/index.html">DevLabs Alliance</a></li>
-                          <li><a href="contact-us/index.html">Contact Us</a></li>
-                          <li><a href="join-us-as-a-trainer/index.html">Join as a Trainer</a></li>
-                          <li><a href="validate/index.html">Validate Certificate</a></li>
-                          <li><a href="refund-reschedule-policy/index.html">Refund &amp; Reschedule Policy</a></li>
-                          <li><a href="terms-of-use-and-privacy-policy/index.html">Terms of use and Privacy Policy</a></li>
-                          <li><a href="career/index.html">Career</a></li>
+                          <li><a href="<%= contact_us_path %>">Contact Us</a></li>
                         </ul>
                         <div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
                         <p>
                           <ul id="" class="cnss-social-icon " style="text-align:left;">
-                            <li class="cn-fa-facebook cn-fa-icon " style="display:inline-block;"><a class="cnss-facebook-square" target="_blank" href="https://www.facebook.com/Dev-labs-alliance-529971950733455/" title="Facebook" style="width:30px;height:30px;padding:5px 0;margin:2px;color: #ffffff;border-radius: 0%;"><i title="Facebook" style="font-size:20px;" class="fa fa-facebook-square"></i></a></li>
-                            <li class="cn-fa-twitter cn-fa-icon " style="display:inline-block;"><a class="cnss-twitter-square" target="_blank" href="https://twitter.com/devlabsalliance" title="Twitter" style="width:30px;height:30px;padding:5px 0;margin:2px;color: #ffffff;border-radius: 0%;"><i title="Twitter" style="font-size:20px;" class="fa fa-twitter-square"></i></a></li>
-                            <li class="cn-fa-linkedin cn-fa-icon " style="display:inline-block;"><a class="cnss-linkedin" target="_blank" href="https://www.linkedin.com/company/devlabsalliance/" title="LinkedIn" style="width:30px;height:30px;padding:5px 0;margin:2px;color: #ffffff;border-radius: 0%;"><i title="LinkedIn" style="font-size:20px;" class="fa fa-linkedin"></i></a></li>
-                            <li class="cn-fa-youtube cn-fa-icon " style="display:inline-block;"><a class="cnss-youtube-square" target="_blank" href="https://www.youtube.com/channel/UC8nOZvcKnVKRPG4yPXLXYZQ/videos" title="YouTube" style="width:30px;height:30px;padding:5px 0;margin:2px;color: #ffffff;border-radius: 0%;"><i title="YouTube" style="font-size:20px;" class="fa fa-youtube-square"></i></a></li>
+                            <%# <li class="cn-fa-facebook cn-fa-icon " style="display:inline-block;"><a class="cnss-facebook-square" target="_blank" href="https://www.facebook.com/Dev-labs-alliance-529971950733455/" title="Facebook" style="width:30px;height:30px;padding:5px 0;margin:2px;color: #ffffff;border-radius: 0%;"><i title="Facebook" style="font-size:20px;" class="fa fa-facebook-square"></i></a></li> %>
+                            <%# <li class="cn-fa-twitter cn-fa-icon " style="display:inline-block;"><a class="cnss-twitter-square" target="_blank" href="https://twitter.com/devlabsalliance" title="Twitter" style="width:30px;height:30px;padding:5px 0;margin:2px;color: #ffffff;border-radius: 0%;"><i title="Twitter" style="font-size:20px;" class="fa fa-twitter-square"></i></a></li> %>
+                            <%# <li class="cn-fa-linkedin cn-fa-icon " style="display:inline-block;"><a class="cnss-linkedin" target="_blank" href="https://www.linkedin.com/company/devlabsalliance/" title="LinkedIn" style="width:30px;height:30px;padding:5px 0;margin:2px;color: #ffffff;border-radius: 0%;"><i title="LinkedIn" style="font-size:20px;" class="fa fa-linkedin"></i></a></li> %>
+                            <%# <li class="cn-fa-youtube cn-fa-icon " style="display:inline-block;"><a class="cnss-youtube-square" target="_blank" href="https://www.youtube.com/channel/UC8nOZvcKnVKRPG4yPXLXYZQ/videos" title="YouTube" style="width:30px;height:30px;padding:5px 0;margin:2px;color: #ffffff;border-radius: 0%;"><i title="YouTube" style="font-size:20px;" class="fa fa-youtube-square"></i></a></li> %>
                           </ul>
                         </p>
                       </div>

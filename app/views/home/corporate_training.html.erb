@@ -1,3 +1,55 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <center><h5 class="modal-title">Ask to Our Expert</h5></center>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <%= form_tag save_enquiry_path do %>
+        <div class="modal-body" style="background: #ccc;">
+          <center><h3 class="modal-title" style="padding: 10px 10px 20px 17px;font-weight: bold;">Ask to Our Expert</h3></center>
+          <div class="form-row">
+            <div class="col">
+              <%= text_field_tag :first_name, nil ,class: "form-control", placeholder: "First name" %>
+            </div>
+            <div class="col">
+              <%= text_field_tag :last_name, nil ,class: "form-control", placeholder: "Last name" %>
+            </div>
+          </div>
+          <br>
+          <div class="form-row">
+            <div class="col">
+              <%= email_field_tag :email, nil ,class: "form-control", placeholder: "Email Address" %>
+            </div>
+            <div class="col">
+              <%= text_field_tag :phone, nil ,class: "form-control", placeholder: "Phone" %>
+            </div>
+          </div>
+          <br>
+          <div class="form-row">
+            <div class="col">
+              <%= text_area_tag :phone, nil ,class: "form-control", placeholder: "Tell us more..." %>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="form-row">
+            <div class="col" style="text-align: center;">
+              <%= submit_tag "Submit",class: "btn btn-success", style: "color: #fff;border-radius: 10px;" %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  </div>
+</div>
 <main id="content" class="neve-main" role="main">
 	<div class="container single-page-container">
 		<div class="row">
@@ -35,7 +87,9 @@
 										</div>
 										<div class="qubely-block-btn-wrapper">
 											<div class="qubely-block-btn">
-												<a class="qubely-block-btn-anchor is-medium" href="../test-automation-continuous-delivery/index.html">Know More</a>
+												<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+													Know More
+												</button>
 											</div>
 										</div>
 									</div>
@@ -43,15 +97,77 @@
 							</div>
 						</div>
 						<div class="is-layout-flow wp-block-column">
-							<div class="wp-block-qubely-infobox qubely-block-b40eec"><div class="qubely-block-info-box  qubely-info-box-layout-1"><div class="qubely-info-box-media qubely-media-has-bg"><img decoding="async" class="qubely-info-box-image" src="<%= asset_path('front.png')%>" srcset="" alt=""/></div><div class="qubely-info-box-body"><div class="qubely-info-box-title-container  qubely-separator-position-top"><div class="qubely-info-box-title-inner"><h3 class="qubely-info-box-title"><strong><strong><strong>Frontend Technologies<br><br></strong></strong></strong></h3></div></div><div class="qubely-block-btn-wrapper"><div class="qubely-block-btn"><a class="qubely-block-btn-anchor is-medium" href="../on-site-corporate-training/index.html">Know More</a></div></div></div></div></div>
+							<div class="wp-block-qubely-infobox qubely-block-b40eec">
+								<div class="qubely-block-info-box  qubely-info-box-layout-1">
+									<div class="qubely-info-box-media qubely-media-has-bg">
+										<img decoding="async" class="qubely-info-box-image" src="<%= asset_path('front.png')%>" srcset="" alt=""/>
+									</div>
+									<div class="qubely-info-box-body">
+										<div class="qubely-info-box-title-container  qubely-separator-position-top">
+											<div class="qubely-info-box-title-inner">
+												<h3 class="qubely-info-box-title"><strong><strong><strong>Frontend Technologies<br><br></strong></strong></strong>
+												</h3>
+											</div>
+										</div>
+										<div class="qubely-block-btn-wrapper">
+											<div class="qubely-block-btn">
+												<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+													Know More
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="is-layout-flow wp-block-column">
-							<div class="wp-block-qubely-infobox qubely-block-b40eec"><div class="qubely-block-info-box  qubely-info-box-layout-1"><div class="qubely-info-box-media qubely-media-has-bg"><img decoding="async" class="qubely-info-box-image" src="<%= asset_path('backend.jpg')%>" srcset="" alt=""/></div><div class="qubely-info-box-body"><div class="qubely-info-box-title-container  qubely-separator-position-top"><div class="qubely-info-box-title-inner"><h3 class="qubely-info-box-title"><strong><strong><strong>Backend Technologies<br><br></strong></strong></strong></h3></div></div><div class="qubely-block-btn-wrapper"><div class="qubely-block-btn"><a class="qubely-block-btn-anchor is-medium" href="../on-site-corporate-training/index.html">Know More</a></div></div></div></div></div>
+							<div class="wp-block-qubely-infobox qubely-block-b40eec">
+								<div class="qubely-block-info-box  qubely-info-box-layout-1">
+									<div class="qubely-info-box-media qubely-media-has-bg">
+										<img decoding="async" class="qubely-info-box-image" src="<%= asset_path('backend.jpg')%>" srcset="" alt=""/>
+									</div>
+									<div class="qubely-info-box-body">
+										<div class="qubely-info-box-title-container  qubely-separator-position-top">
+											<div class="qubely-info-box-title-inner">
+												<h3 class="qubely-info-box-title"><strong><strong><strong>Backend Technologies<br><br></strong></strong></strong>
+												</h3>
+											</div>
+										</div>
+										<div class="qubely-block-btn-wrapper">
+											<div class="qubely-block-btn">
+												<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+													Know More
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="is-layout-flex wp-container-6 wp-block-columns">
 						<div class="is-layout-flow wp-block-column">
-							<div class="wp-block-qubely-infobox qubely-block-bfeede"><div class="qubely-block-info-box  qubely-info-box-layout-1"><div class="qubely-info-box-media qubely-media-has-bg"><img decoding="async" class="qubely-info-box-image" src="<%= asset_path('devops-continuous-delivery.jpg')%>" srcset="" alt=""/></div><div class="qubely-info-box-body"><div class="qubely-info-box-title-container  qubely-separator-position-top"><div class="qubely-info-box-title-inner"><h3 class="qubely-info-box-title"><strong>Devops</strong></h3></div></div><div class="qubely-block-btn-wrapper"><div class="qubely-block-btn"><a class="qubely-block-btn-anchor is-medium" href="../software-development/index.html">Know More</a></div></div></div></div></div>
+							<div class="wp-block-qubely-infobox qubely-block-bfeede">
+								<div class="qubely-block-info-box  qubely-info-box-layout-1">
+									<div class="qubely-info-box-media qubely-media-has-bg">
+										<img decoding="async" class="qubely-info-box-image" src="<%= asset_path('devops-continuous-delivery.jpg')%>" srcset="" alt=""/>
+									</div>
+									<div class="qubely-info-box-body">
+										<div class="qubely-info-box-title-container  qubely-separator-position-top">
+											<div class="qubely-info-box-title-inner">
+												<h3 class="qubely-info-box-title"><strong>Devops</strong></h3>
+											</div>
+										</div>
+										<div class="qubely-block-btn-wrapper">
+											<div class="qubely-block-btn">
+												<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+													Know More
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="is-layout-flow wp-block-column">
 						</div>
@@ -111,10 +227,31 @@
 	</div>
 </main>
 
+<script type="text/javascript">
+  $(".qubely-block-btn-anchor").on('click', function(){
+    $("#myModal").modal('show');
+  });
+</script>
+
 <style type="text/css">
 	#responsive-form{
 		max-width: 100%;
 	}
+	.form-row input{
+    height: 50px;
+  }
+  .modal-dialog {
+    max-width: 800px;
+  }
+  .modal-open .modal {
+    top: 30%;
+  }
+  .fa-font{
+    font-size: 72px;
+  }
+  .wp-block-button__link{
+    color: #fffff !important;
+  }
 </style>
 
 <style type="text/css">:root {--qubely-color-1:#696CFF;--qubely-color-2:#04C3EC;--qubely-color-3:#363636;--qubely-color-4:#BBC0D4;--qubely-color-5:#FFFFFF;}:root{--qubely-typo1-font-size:60px;--qubely-typo1-line-height:80px;--qubely-typo1-letter-spacing:0px;}@media (max-width: 991px) {:root{--qubely-typo1-letter-spacing:0px;}} :root{--qubely-typo1-font-family:'Roboto',sans-serif;--qubely-typo1-font-weight:700;--qubely-typo1-font-style:normal;}:root{--qubely-typo2-font-size:48px;--qubely-typo2-line-height:64px;--qubely-typo2-letter-spacing:0px;}@media (max-width: 991px) {:root{--qubely-typo2-letter-spacing:0px;}} :root{--qubely-typo2-font-family:'Roboto',sans-serif;--qubely-typo2-font-weight:700;--qubely-typo2-font-style:normal;}:root{--qubely-typo3-font-size:36px;--qubely-typo3-line-height:48px;--qubely-typo3-letter-spacing:0px;}@media (max-width: 991px) {:root{--qubely-typo3-letter-spacing:0px;}} :root{--qubely-typo3-font-family:'Roboto',sans-serif;--qubely-typo3-font-weight:700;--qubely-typo3-font-style:normal;}:root{--qubely-typo4-font-size:30px;--qubely-typo4-line-height:36px;--qubely-typo4-letter-spacing:0px;}@media (max-width: 991px) {:root{--qubely-typo4-letter-spacing:0px;}} :root{--qubely-typo4-font-family:'Roboto',sans-serif;--qubely-typo4-font-weight:700;--qubely-typo4-font-style:normal;}:root{--qubely-typo5-font-size:18px;--qubely-typo5-line-height:28px;--qubely-typo5-letter-spacing:0px;}@media (max-width: 991px) {:root{--qubely-typo5-letter-spacing:0px;}} :root{--qubely-typo5-font-family:'Roboto',sans-serif;--qubely-typo5-font-weight:700;--qubely-typo5-font-style:normal;}:root{--qubely-typo6-font-size:16px;--qubely-typo6-line-height:24px;--qubely-typo6-letter-spacing:0px;}@media (max-width: 991px) {:root{--qubely-typo6-letter-spacing:0px;}} :root{--qubely-typo6-font-family:'Roboto',sans-serif;--qubely-typo6-font-weight:700;--qubely-typo6-font-style:normal;}:root{--qubely-typo7-font-size:18px;--qubely-typo7-line-height:24px;--qubely-typo7-letter-spacing:0px;}@media (max-width: 991px) {:root{--qubely-typo7-letter-spacing:0px;}} :root{--qubely-typo7-font-family:'Roboto',sans-serif;}:root{--qubely-typo8-font-size:14px;--qubely-typo8-line-height:22px;--qubely-typo8-letter-spacing:0px;}@media (max-width: 991px) {:root{--qubely-typo8-letter-spacing:0px;}} :root{--qubely-typo8-font-family:'Roboto',sans-serif;}:root{--qubely-typo9-font-size:16px;--qubely-typo9-line-height:19px;--qubely-typo9-letter-spacing:3px;}@media (max-width: 991px) {:root{--qubely-typo9-letter-spacing:0px;}} :root{--qubely-typo9-font-family:'Roboto',sans-serif;--qubely-typo9-font-weight:700;--qubely-typo9-font-style:normal;--qubely-typo9-text-transform:uppercase;}:root{--qubely-typo10-font-size:14px;--qubely-typo10-line-height:19px;--qubely-typo10-letter-spacing:3px;}@media (max-width: 991px) {:root{--qubely-typo10-letter-spacing:0px;}} :root{--qubely-typo10-font-family:'Roboto',sans-serif;--qubely-typo10-font-weight:700;--qubely-typo10-font-style:normal;--qubely-typo10-text-transform:uppercase;}@media (min-width: 576px){.qubely-section .qubely-container{max-width: 540px;}}@media (min-width: 768px){.qubely-section .qubely-container{max-width: 720px;}}@media (min-width: 992px){.qubely-section .qubely-container{max-width: 960px;}}@media (min-width: 1200px){.qubely-section .qubely-container{max-width: 1140px;}}.qubely-block-e5c808 .qubely-block-btn-anchor{border-radius:4px;;}.qubely-block-e5c808 .qubely-block-btn-wrapper { margin-bottom: 8px; }.qubely-block-e5c808 .qubely-block-info-box {text-align: center;}.qubely-block-e5c808{padding-top:10px;padding-bottom:10px;}.qubely-block-e5c808 .qubely-info-box-media, .qubely-block-e5c808 .qubely-info-box-media img{border-radius:5px;;}.qubely-block-e5c808 .qubely-info-box-media {margin-bottom: 20px;}.qubely-block-e5c808 .qubely-info-box-title{font-size:24px;line-height:1.2em !important;}.qubely-block-e5c808 .qubely-info-box-title-inner {margin-bottom: 14px;}.qubely-block-e5c808 .qubely-block-info-box .qubely-info-box-sub-title{font-size:16px;}.qubely-block-e5c808 .qubely-block-info-box{padding:11px;;}.qubely-block-e5c808 .qubely-block-info-box{border-radius:8px;;}.qubely-block-e5c808 {position:relative;}.qubely-block-e5c808 {z-index:0;}.qubely-block-e5c808 .qubely-block-btn-anchor {width:auto !important}.qubely-block-e5c808 .qubely-block-btn-anchor { color:var(--qubely-color-5); }.qubely-block-e5c808 .qubely-block-btn-anchor:hover { color:#fff; }.qubely-block-e5c808 .qubely-block-btn-anchor{background-image: none; background-color: #7e7e7e;}.qubely-block-e5c808 .qubely-block-btn-anchor:before{background-image: none; background-color: #373737;}.qubely-block-e5c808 .qubely-block-btn-anchor{border-width:1px;border-color:  #7e7e7e; border-style: solid;}.qubely-block-e5c808 .qubely-block-btn-anchor:hover {border-color: #373737;}.qubely-block-e5c808 .qubely-info-box-media .qubely-info-box-image:not(.qubely-image-placeholder) {height: auto;}.qubely-block-e5c808 .qubely-block-info-box:hover .qubely-info-box-media { border-color: #e5e5e5;}.qubely-block-e5c808 .qubely-info-box-title{}.qubely-block-e5c808 .qubely-block-info-box .qubely-info-box-sub-title{}.qubely-block-e5c808 .qubely-block-info-box{background-image: none; background-color: #ebebeb;}.qubely-block-e5c808 .qubely-block-info-box:hover { border-color: #e5e5e5;}.qubely-block-e5c808 .qubely-block-info-box{ box-shadow: 2px 2px 3px 0px #b0b0b0; }.qubely-block-e5c808 .qubely-block-info-box:hover{ box-shadow: 2px 2px 3px 0px var(--qubely-color-3); }.qubely-block-9b859e .qubely-block-btn-anchor{border-radius:4px;;}.qubely-block-9b859e .qubely-block-btn-wrapper { margin-bottom: 8px; }.qubely-block-9b859e .qubely-block-info-box {text-align: center;}.qubely-block-9b859e{padding-top:10px;padding-bottom:10px;}.qubely-block-9b859e .qubely-info-box-media, .qubely-block-9b859e .qubely-info-box-media img{border-radius:5px;;}.qubely-block-9b859e .qubely-info-box-media {margin-bottom: 20px;}.qubely-block-9b859e .qubely-info-box-title{font-size:24px;line-height:1.2em !important;}.qubely-block-9b859e .qubely-info-box-title-inner {margin-bottom: 14px;}.qubely-block-9b859e .qubely-block-info-box .qubely-info-box-sub-title{font-size:16px;}.qubely-block-9b859e .qubely-block-info-box{padding:11px;;}.qubely-block-9b859e .qubely-block-info-box{border-radius:8px;;}.qubely-block-9b859e {position:relative;}.qubely-block-9b859e {z-index:0;}.qubely-block-9b859e .qubely-block-btn-anchor {width:auto !important}.qubely-block-9b859e .qubely-block-btn-anchor { color:var(--qubely-color-5); }.qubely-block-9b859e .qubely-block-btn-anchor:hover { color:#fff; }.qubely-block-9b859e .qubely-block-btn-anchor{background-image: none; background-color: #7e7e7e;}.qubely-block-9b859e .qubely-block-btn-anchor:before{background-image: none; background-color: #373737;}.qubely-block-9b859e .qubely-block-btn-anchor{border-width:1px;border-color:  #7e7e7e; border-style: solid;}.qubely-block-9b859e .qubely-block-btn-anchor:hover {border-color: #373737;}.qubely-block-9b859e .qubely-info-box-media .qubely-info-box-image:not(.qubely-image-placeholder) {height: auto;}.qubely-block-9b859e .qubely-block-info-box:hover .qubely-info-box-media { border-color: #e5e5e5;}.qubely-block-9b859e .qubely-info-box-title{}.qubely-block-9b859e .qubely-block-info-box .qubely-info-box-sub-title{}.qubely-block-9b859e .qubely-block-info-box{background-image: none; background-color: #ebebeb;}.qubely-block-9b859e .qubely-block-info-box:hover { border-color: #e5e5e5;}.qubely-block-9b859e .qubely-block-info-box{ box-shadow: 2px 2px 3px 0px #b0b0b0; }.qubely-block-9b859e .qubely-block-info-box:hover{ box-shadow: 2px 2px 3px 0px var(--qubely-color-3); }.qubely-block-e44dab .qubely-block-btn-anchor{border-radius:4px;;}.qubely-block-e44dab .qubely-block-btn-wrapper { margin-bottom: 8px; }.qubely-block-e44dab .qubely-block-info-box {text-align: center;}.qubely-block-e44dab{padding-top:10px;padding-bottom:10px;}.qubely-block-e44dab .qubely-info-box-media, .qubely-block-e44dab .qubely-info-box-media img{border-radius:5px;;}.qubely-block-e44dab .qubely-info-box-media {margin-bottom: 20px;}.qubely-block-e44dab .qubely-info-box-title{font-size:24px;line-height:1.2em !important;}.qubely-block-e44dab .qubely-info-box-title-inner {margin-bottom: 14px;}.qubely-block-e44dab .qubely-block-info-box .qubely-info-box-sub-title{font-size:16px;}.qubely-block-e44dab .qubely-block-info-box{padding:11px;;}.qubely-block-e44dab .qubely-block-info-box{border-radius:8px;;}.qubely-block-e44dab {position:relative;}.qubely-block-e44dab {z-index:0;}.qubely-block-e44dab .qubely-block-btn-anchor {width:auto !important}.qubely-block-e44dab .qubely-block-btn-anchor { color:var(--qubely-color-5); }.qubely-block-e44dab .qubely-block-btn-anchor:hover { color:#fff; }.qubely-block-e44dab .qubely-block-btn-anchor{background-image: none; background-color: #7e7e7e;}.qubely-block-e44dab .qubely-block-btn-anchor:before{background-image: none; background-color: #373737;}.qubely-block-e44dab .qubely-block-btn-anchor{border-width:1px;border-color:  #7e7e7e; border-style: solid;}.qubely-block-e44dab .qubely-block-btn-anchor:hover {border-color: #373737;}.qubely-block-e44dab .qubely-info-box-media .qubely-info-box-image:not(.qubely-image-placeholder) {height: auto;}.qubely-block-e44dab .qubely-block-info-box:hover .qubely-info-box-media { border-color: #e5e5e5;}.qubely-block-e44dab .qubely-info-box-title{}.qubely-block-e44dab .qubely-block-info-box .qubely-info-box-sub-title{}.qubely-block-e44dab .qubely-block-info-box{background-image: none; background-color: #ebebeb;}.qubely-block-e44dab .qubely-block-info-box:hover { border-color: #e5e5e5;}.qubely-block-e44dab .qubely-block-info-box{ box-shadow: 2px 2px 3px 0px #b0b0b0; }.qubely-block-e44dab .qubely-block-info-box:hover{ box-shadow: 2px 2px 3px 0px var(--qubely-color-3); }.qubely-block-bfeede .qubely-block-btn-anchor{border-radius:4px;;}.qubely-block-bfeede .qubely-block-btn-wrapper { margin-bottom: 8px; }.qubely-block-bfeede .qubely-block-info-box {text-align: center;}.qubely-block-bfeede{padding-top:10px;padding-bottom:10px;}.qubely-block-bfeede .qubely-info-box-media, .qubely-block-bfeede .qubely-info-box-media img{border-radius:5px;;}.qubely-block-bfeede .qubely-info-box-media {margin-bottom: 20px;}.qubely-block-bfeede .qubely-info-box-title{font-size:24px;line-height:1.2em !important;}.qubely-block-bfeede .qubely-info-box-title-inner {margin-bottom: 14px;}.qubely-block-bfeede .qubely-block-info-box .qubely-info-box-sub-title{font-size:16px;}.qubely-block-bfeede .qubely-block-info-box{padding:11px;;}.qubely-block-bfeede .qubely-block-info-box{border-radius:8px;;}.qubely-block-bfeede {position:relative;}.qubely-block-bfeede {z-index:0;}.qubely-block-bfeede .qubely-block-btn-anchor {width:auto !important}.qubely-block-bfeede .qubely-block-btn-anchor { color:var(--qubely-color-5); }.qubely-block-bfeede .qubely-block-btn-anchor:hover { color:#fff; }.qubely-block-bfeede .qubely-block-btn-anchor{background-image: none; background-color: #7e7e7e;}.qubely-block-bfeede .qubely-block-btn-anchor:before{background-image: none; background-color: #373737;}.qubely-block-bfeede .qubely-block-btn-anchor{border-width:1px;border-color:  #7e7e7e; border-style: solid;}.qubely-block-bfeede .qubely-block-btn-anchor:hover {border-color: #373737;}.qubely-block-bfeede .qubely-info-box-media .qubely-info-box-image:not(.qubely-image-placeholder) {height: auto;}.qubely-block-bfeede .qubely-block-info-box:hover .qubely-info-box-media { border-color: #e5e5e5;}.qubely-block-bfeede .qubely-info-box-title{}.qubely-block-bfeede .qubely-block-info-box .qubely-info-box-sub-title{}.qubely-block-bfeede .qubely-block-info-box{background-image: none; background-color: #ebebeb;}.qubely-block-bfeede .qubely-block-info-box:hover { border-color: #e5e5e5;}.qubely-block-bfeede .qubely-block-info-box{ box-shadow: 2px 2px 3px 0px #b0b0b0; }.qubely-block-bfeede .qubely-block-info-box:hover{ box-shadow: 2px 2px 3px 0px var(--qubely-color-3); }.qubely-block-b40eec .qubely-block-btn-anchor{border-radius:4px;;}.qubely-block-b40eec .qubely-block-btn-wrapper { margin-bottom: 8px; }.qubely-block-b40eec .qubely-block-info-box {text-align: center;}.qubely-block-b40eec{padding-top:10px;padding-bottom:10px;}.qubely-block-b40eec .qubely-info-box-media, .qubely-block-b40eec .qubely-info-box-media img{border-radius:5px;;}.qubely-block-b40eec .qubely-info-box-media {margin-bottom: 20px;}.qubely-block-b40eec .qubely-info-box-title{font-size:24px;line-height:1.2em !important;}.qubely-block-b40eec .qubely-info-box-title-inner {margin-bottom: 14px;}.qubely-block-b40eec .qubely-block-info-box .qubely-info-box-sub-title{font-size:16px;}.qubely-block-b40eec .qubely-block-info-box{padding:11px;;}.qubely-block-b40eec .qubely-block-info-box{border-radius:8px;;}.qubely-block-b40eec {position:relative;}.qubely-block-b40eec {z-index:0;}.qubely-block-b40eec .qubely-block-btn-anchor {width:auto !important}.qubely-block-b40eec .qubely-block-btn-anchor { color:var(--qubely-color-5); }.qubely-block-b40eec .qubely-block-btn-anchor:hover { color:#fff; }.qubely-block-b40eec .qubely-block-btn-anchor{background-image: none; background-color: #7e7e7e;}.qubely-block-b40eec .qubely-block-btn-anchor:before{background-image: none; background-color: #373737;}.qubely-block-b40eec .qubely-block-btn-anchor{border-width:1px;border-color:  #7e7e7e; border-style: solid;}.qubely-block-b40eec .qubely-block-btn-anchor:hover {border-color: #373737;}.qubely-block-b40eec .qubely-info-box-media .qubely-info-box-image:not(.qubely-image-placeholder) {height: auto;}.qubely-block-b40eec .qubely-block-info-box:hover .qubely-info-box-media { border-color: #e5e5e5;}.qubely-block-b40eec .qubely-info-box-title{}.qubely-block-b40eec .qubely-block-info-box .qubely-info-box-sub-title{}.qubely-block-b40eec .qubely-block-info-box{background-image: none; background-color: #ebebeb;}.qubely-block-b40eec .qubely-block-info-box:hover { border-color: #e5e5e5;}.qubely-block-b40eec .qubely-block-info-box{ box-shadow: 2px 2px 3px 0px #b0b0b0; }.qubely-block-b40eec .qubely-block-info-box:hover{ box-shadow: 2px 2px 3px 0px var(--qubely-color-3); }</style>
