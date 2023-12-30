@@ -19,7 +19,10 @@ class HomeController < ApplicationController
   end
 
   def save_enquiry
-    enquiry = Enquiry.create!(first_name: params[:first_name], last_name: params[:last_name], email: params[:email], phone: params[:phone])
+    @enquiry = Enquiry.new(first_name: params[:first_name], last_name: params[:last_name], email: params[:email], phone: params[:phone], content: params[:content])
+    if @enquiry.save
+      EnquiryMailer.send_enquiry(@enquiry).deliver_now
+    end
     redirect_to root_path, notice: "Thanks for your enquiry. We will contact you soon.!!"
   end
 end
